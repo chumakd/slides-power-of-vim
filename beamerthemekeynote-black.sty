@@ -1,0 +1,48 @@
+%%
+ % keynote-black theme for LaTeX Beamer 3.07 or later, 2012-10-15
+ % Based on Manhattan theme 2009-03-31.
+ % Meant to resemble a look known from Keynote by Apple Inc.
+ % Enable with \usetheme{keynote-black}
+ %
+ % Copyright (C) 2009 Sebastian Pipping <sebastian@pipping.org>
+ % Copyright (C) 2012 Dima Chumak <chumakd@gmail.com>
+ %
+ % Dual-licensed under
+ %  1) Creative Commons Attribution-Noncommercial-ShareAlike 3.0 License
+ %     http://creativecommons.org/licenses/by-nc-sa/3.0/
+ %
+ %  2) GNU General Public License 3.0 or later
+ %     http://www.fsf.org/licensing/licenses/gpl.html
+ %
+ % Inspired by previous work by Shawn Lankton:
+ % http://www.shawnlankton.com/2008/02/beamer-and-latex-with-keynote-theme/
+ %%
+
+% Default theme as a base
+\usetheme{default}
+
+% Black background
+% it's derived from bg of 'normal text', so no need to set it separately
+%\setbeamertemplate{background canvas}{bg=black}
+
+% Font
+\renewcommand\sfdefault{phv}
+\renewcommand\familydefault{\sfdefault}
+\setbeamerfont{title}{size=\Huge}
+\setbeamerfont{frametitle}{size=\huge}
+\setbeamercolor{frametitle}{bg=, fg=white}
+\setbeamercolor{title}{bg=, fg=white}
+\setbeamercolor{normal text}{bg=black, fg=white}
+
+% Structure
+\setbeamertemplate{items}[circle]
+\setbeamercolor{structure}{fg=white}
+\setbeamercolor{item}{fg=gray}
+\setbeamercolor{itemize item}{fg=white}
+\setbeamercolor{itemize subitem}{fg=white}
+\setbeamercolor{itemize subsubitem}{fg=white}
+
+% Features
+\setbeamertemplate{headline}{}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
